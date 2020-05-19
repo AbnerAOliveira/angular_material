@@ -14,7 +14,7 @@
 <div class="mat-caption">Caption text</div> -->
 
 <!-- BUTTONS -->
-<div>
+<!-- <div>
   <button mat-button disableRipple color="primary">Click me</button>
   <button mat-raised-button color="accent">Click me</button>
   <button mat-flat-button>Click me</button>
@@ -24,4 +24,17 @@
   <button mat-icon-button>Icon</button>
   <button mat-fab>Fab</button>
   <button mat-mini-fab>Mini</button>
+</div> -->
+
+<!-- BUTTON TOGGLE -->
+<div>
+  <mat-button-toggle checked disableRipple #toggleBtn>Toggle</mat-button-toggle>{{toggleBtn.checked}}
+</div>
+<div>
+  <mat-button-toggle-group #toggleGroup="matButtonToggleGroup" multiple>
+    <mat-button-toggle value="angular">Angular</mat-button-toggle>
+    <mat-button-toggle value="react">React</mat-button-toggle>
+    <mat-button-toggle value="vue">Vue</mat-button-toggle>
+  </mat-button-toggle-group>
+  {{toggleGroup.value}}
 </div>
