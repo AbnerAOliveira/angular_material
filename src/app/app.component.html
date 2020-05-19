@@ -39,6 +39,19 @@
   {{toggleGroup.value}}
 </div> -->
 
+<!-- ICON
 <div>
   <mat-icon class="grade">grade</mat-icon>
+</div> -->
+
+<!-- BADGE -->
+<div>
+  <span matBadge="3" matBadgeSize="small" matBadgePosition="above after" 
+  matBadgeColor="warn" matBadgeOverlap=true>
+    <mat-icon>notifications</mat-icon>
+  </span>
+
+  <div>
+    <span [matBadge]="notify" matBadgeSize="medium" [matBadgeHidden]="notify === 0" matBadgeOverlap=false>Notifications</span>
+  </div>
 </div>
