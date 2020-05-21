@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   notify:number = 2;
+  spinner = false;
+
+
+  load(){
+    this.spinner = true;
+    setTimeout(() => {
+      this.spinner = false;
+    }, 5000);
+  }
+
+
 }

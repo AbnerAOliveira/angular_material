@@ -45,7 +45,7 @@
 </div> -->
 
 <!-- BADGE -->
-<div>
+<!-- <div>
   <span matBadge="3" matBadgeSize="small" matBadgePosition="above after" 
   matBadgeColor="warn" matBadgeOverlap=true>
     <mat-icon>notifications</mat-icon>
@@ -54,4 +54,13 @@
   <div>
     <span [matBadge]="notify" matBadgeSize="medium" [matBadgeHidden]="notify === 0" matBadgeOverlap=false>Notifications</span>
   </div>
+</div> -->
+
+<!-- PROGRESS SPINNER -->
+<div>
+  <mat-progress-spinner value="100"></mat-progress-spinner>
+</div>
+<div>
+  <mat-spinner *ngIf="spinner" color="accent"></mat-spinner>
+  <button *ngIf="!spinner" mat-button color="warn" (click)="load()">Load</button>
 </div>
