@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   notify:number = 2;
   spinner = false;
+  opened = false;
 
 
   load(){

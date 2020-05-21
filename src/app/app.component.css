@@ -17,3 +17,13 @@ a{
 span{
     margin: 1rem;
 }
+mat-sidenav-container{
+     height: 100%;
+}
+mat-sidenav{
+    background-color: aquamarine;
+    width: 25%;
+}
+mat-sidenav, mat-sidenav-content{
+    padding: 16px;
+}

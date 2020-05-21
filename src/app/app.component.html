@@ -66,11 +66,24 @@
 </div> -->
 
 <!-- NAVBAR -->
-<mat-toolbar color="accent" class="navbar">
+<!-- <mat-toolbar color="accent" class="navbar">
 <div><a href="#">Navbar</a></div>
 <div>
   <span><a href="#">Home</a></span>
   <span><a href="#">Contact</a></span>
   <span><a href="#">About</a></span>
 </div>
-</mat-toolbar>
+</mat-toolbar> -->
+
+<!-- SIDENAV -->
+<mat-sidenav-container>
+  <mat-sidenav mode="over" [(opened)]="opened">
+    Sidenav
+  </mat-sidenav>
+  <mat-sidenav-content>
+    Main
+    <button mat-icon-button (click)="opened=!opened">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </mat-sidenav-content>
+</mat-sidenav-container>
