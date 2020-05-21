@@ -5,6 +5,15 @@ button{
     color: aqua;
 }
 
-div {
-    margin: 3rem;
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.navbar{
+    justify-content: space-between;
+}
+
+span{
+    margin: 1rem;
 }
