@@ -10,8 +10,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatListModule} from '@angular/material/list';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatExpansionModule} from '@angular/material/expansion';
-
-
+import {MatCardModule} from '@angular/material/card';
 
 const MaterialComponents = [
   MatButtonModule,
@@ -25,6 +24,7 @@ const MaterialComponents = [
   MatListModule,
   MatGridListModule,
   MatExpansionModule,
+  MatCardModule,
 ]
 
 

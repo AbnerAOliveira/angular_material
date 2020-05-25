@@ -149,7 +149,7 @@
 </mat-grid-list> -->
 
 <!-- EXPASION PANEL WITH ACCORDION -->
-<mat-accordion>
+<!-- <mat-accordion>
   <mat-expansion-panel>
     <mat-expansion-panel-header>
       <mat-panel-title>
@@ -169,8 +169,8 @@
     <mat-expansion-panel-header>
       <mat-panel-title>
         Angular Material
-      </mat-panel-title>
-      <mat-panel-description>
+      </mat-panel-title> -->
+      <!-- <mat-panel-description>
         Total duration : 2 hours
       </mat-panel-description>
     </mat-expansion-panel-header>
@@ -179,4 +179,32 @@
     <button mat-button>Enroll</button>
     </mat-action-row>
   </mat-expansion-panel>
-</mat-accordion>
+</mat-accordion> -->
+
+<!-- CARD -->
+<mat-card style="max-width:400px; margin: 2rem;" >
+  <mat-card-header>
+    <div mat-card-avatar><mat-icon style="font-size: 40px;">accessible</mat-icon></div>
+    <mat-card-title>
+      Title Card
+    </mat-card-title>
+    <mat-card-subtitle>
+      Subtitle Card
+    </mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+  <mat-card-content>
+    <p>
+      The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+      A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+      bred for hunting.
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button color="primary">Like</button>
+    <button mat-button color="warn">Deslike</button>
+  </mat-card-actions>
+  <mat-card-footer>
+    Footer Card
+  </mat-card-footer>
+</mat-card>
