@@ -209,9 +209,35 @@
   </mat-card-footer>
 </mat-card> -->
 
-<mat-tab-group #refTab>
+<!-- TABS -->
+<!-- <mat-tab-group #refTab>
   <mat-tab label="Angular">Content Angular</mat-tab>
   <mat-tab label="React">Content React</mat-tab>
   <mat-tab label="Vue">Content Vue</mat-tab>
 </mat-tab-group>
-Index: {{refTab.selectedIndex}}
+Index: {{refTab.selectedIndex}} -->
+
+<!-- STREPPER -->
+<mat-horizontal-stepper>
+  <mat-step label="Personal Datas">
+    <p>Description personal datas</p>
+  </mat-step>
+  <mat-step label="Professional Datas">
+    <p>Description professinal datas</p>
+  </mat-step>
+  <mat-step label="Datas">
+    <p>Whever datas</p>
+  </mat-step>
+</mat-horizontal-stepper>
+
+<mat-vertical-stepper linear>
+  <mat-step label="Personal Datas" Completed="true">
+    <p>Description personal datas</p>
+  </mat-step>
+  <mat-step label="Professional Datas" Completed="false" optional>
+    <p>Description professinal datas</p>
+  </mat-step>
+  <mat-step label="Datas" Completed="false">
+    <p>Whever datas</p>
+  </mat-step>
+</mat-vertical-stepper>
