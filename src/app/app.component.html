@@ -132,7 +132,8 @@
   </a>
 </mat-nav-list> -->
 
-<mat-grid-list cols="2" rowHeight="100px" gutterSize="10px">
+<!-- GRID -->
+<!-- <mat-grid-list cols="2" rowHeight="100px" gutterSize="10px">
   <mat-grid-tile rowspan="2">
     Tile 1
   </mat-grid-tile>
@@ -145,4 +146,37 @@
   <mat-grid-tile colspan="2">
     Tile 4
   </mat-grid-tile>
-</mat-grid-list>
+</mat-grid-list> -->
+
+<!-- EXPASION PANEL WITH ACCORDION -->
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Title Course
+      </mat-panel-title>
+      <mat-panel-description>
+        Total duration : 3 hours
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p>This is the panel content. Add course details here.</p>
+    <mat-action-row>
+    <button mat-button>Enroll</button>
+    </mat-action-row>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Angular Material
+      </mat-panel-title>
+      <mat-panel-description>
+        Total duration : 2 hours
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p>This is the panel content. Add course details here.</p>
+    <mat-action-row>
+    <button mat-button>Enroll</button>
+    </mat-action-row>
+  </mat-expansion-panel>
+</mat-accordion>
