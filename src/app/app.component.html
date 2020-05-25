@@ -218,7 +218,7 @@
 Index: {{refTab.selectedIndex}} -->
 
 <!-- STREPPER -->
-<mat-horizontal-stepper>
+<!-- <mat-horizontal-stepper>
   <mat-step label="Personal Datas">
     <p>Description personal datas</p>
   </mat-step>
@@ -240,4 +240,12 @@ Index: {{refTab.selectedIndex}} -->
   <mat-step label="Datas" Completed="false">
     <p>Whever datas</p>
   </mat-step>
-</mat-vertical-stepper>
+</mat-vertical-stepper> -->
+
+<!-- INPUTS -->
+<mat-form-field style="margin: 3rem" hideRequiredMarker 
+appearance="outline" color="warn">
+  <mat-label>Name</mat-label>
+  <input matInput required>
+  <mat-hint align="end">Min 6 characters</mat-hint>
+</mat-form-field>
